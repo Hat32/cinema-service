@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CinemaService.Services.Settings\CinemaService.Services.Settings.csproj" />
+    <ProjectReference Include="..\..\..\CinemaService.Settings\CinemaService.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\CinemaService.Common\CinemaService.Common.csproj" />
+    <ProjectReference Include="..\CinemaService.Api.Settings\CinemaService.Api.Settings.csproj" />
+  </ItemGroup>
+
+</Project>
