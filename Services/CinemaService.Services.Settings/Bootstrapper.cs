@@ -15,7 +15,7 @@ public static class Bootstrapper
     }
     public static IServiceCollection AddMainSettings(this IServiceCollection services, IConfiguration configuration = null)
     {
-        var settings = SettingsLoader.Load<SwaggerSettings>("Main", configuration);
+        var settings = SettingsLoader.Load<MainSettings>("Main", configuration);
         services.AddSingleton(settings);
 
         return services;
