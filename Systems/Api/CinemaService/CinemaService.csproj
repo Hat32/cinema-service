@@ -26,10 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CinemaService.Services.Settings\CinemaService.Services.Settings.csproj" />
-    <ProjectReference Include="..\..\..\CinemaService.Settings\CinemaService.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Services\CinemaService.Services.Settings\CinemaService.Services.Settings.csproj" />
     <ProjectReference Include="..\..\..\Shared\CinemaService.Common\CinemaService.Common.csproj" />
-    <ProjectReference Include="..\CinemaService.Api.Settings\CinemaService.Api.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\CinemaService.Settings\CinemaService.Settings.csproj" />
   </ItemGroup>
 
 </Project>

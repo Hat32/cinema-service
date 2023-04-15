@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿namespace CinemaService.Settings;
 
-namespace CinemaService.Settings;
+using Microsoft.Extensions.Configuration;
 
 public static class SettingsFactory
 {

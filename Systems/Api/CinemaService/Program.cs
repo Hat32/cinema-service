@@ -4,14 +4,13 @@ using CinemaService.Services.Settings;
 using CinemaService.Settings;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
-using Org.BouncyCastle.Pkix;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddAppLogger();
 
-var mainSettings = Settings.Load<MainSettings>("Main");
-var swaggerSettings = Settings.Load<SwaggerSettings>("Swagger");
+var mainSettings = SettingsLoader.Load<MainSettings>("Main");
+var swaggerSettings = SettingsLoader.Load<SwaggerSettings>("Swagger");
 
 var services = builder.Services;
 

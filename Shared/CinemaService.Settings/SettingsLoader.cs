@@ -1,7 +1,7 @@
 ﻿namespace CinemaService.Settings;
 
 using Microsoft.Extensions.Configuration;
-public abstract class Settings
+public abstract class SettingsLoader
 {
     public static T Load<T>(string key, IConfiguration configuration = null)
     {
