@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CinemaService</name>
+    </assembly>
+    <members>
+        <member name="T:CinemaService.Api.Configuration.CorsConfiguration">
+            <summary>
+            CORS configuration
+            </summary>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.CorsConfiguration.AddAppCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add CORS
+            </summary>
+            <param name="services">Services collection</param>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.CorsConfiguration.UseAppCors(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use service
+            </summary>
+            <param name="app">Application</param>
+        </member>
+        <member name="T:CinemaService.Api.Configuration.HealthCheckConfiguration">
+            <summary>
+            Health checks configuration
+            </summary>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.HealthCheckConfiguration.AddAppHealthChecks(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds health check for API to <paramref name="services"/>
+            </summary>
+            <param name="services">Service collection</param>
+            <returns>The service collection</returns>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.HealthCheckConfiguration.UseAppHealthChecks(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Adds and configures health check endpoint
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:CinemaService.Api.Configuration.LoggerConfiguration">
+            <summary>
+             Logger Configuration
+            </summary>
+        </member>
+        <member name="T:CinemaService.Api.Configuration.SwaggerConfiguration">
+            <summary>
+            Swagger configuration
+            </summary>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,CinemaService.Services.Settings.MainSettings,CinemaService.Services.Settings.SwaggerSettings)">
+            <summary>
+            Adds and configures swaggerGen to service collection
+            </summary>
+            <param name="services">Services collection</param>
+            <param name="mainSettings"></param>
+            <param name="swaggerSettings"></param>
+            <returns>The service collection</returns>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.SwaggerConfiguration.UseAppSwagger(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Adds and configures swagger and swaggerUI middlewares
+            </summary>
+            <param name="app">Web application</param>
+        </member>
+        <member name="T:CinemaService.Api.Configuration.VersioningConfiguration">
+            <summary>
+            Versioning configuration
+            </summary>
+        </member>
+        <member name="M:CinemaService.Api.Configuration.VersioningConfiguration.AddAppVersioning(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds version support for API
+            </summary>
+            <param name="services">Service collection</param>
+            <returns>The service collection</returns>
+        </member>
+    </members>
+</doc>
